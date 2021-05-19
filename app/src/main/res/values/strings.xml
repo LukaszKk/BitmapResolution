@@ -2,6 +2,7 @@
     <string name="app_name">BmpRes3</string>
     <string name="S_BMP1">Rozmywanie1</string>
     <string name="S_BMP2">Rozmywanie2</string>
+    <string name="S_BMP3">Negatyw</string>
     <string name="S_BMPINFO">Info o bitmapie</string>
     <string name="IMG_INFO">image: %dx%d bitmap: %dx%d</string>
 </resources>

@@ -13,8 +13,7 @@
         android:onClick="onBitmap1"
         android:text="@string/S_BMP1"
         android:textColor="@color/yellow"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.095"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,14 +21,30 @@
         android:id="@+id/bmpSharp2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/dark_green"
         android:onClick="onBitmap2"
         android:text="@string/S_BMP2"
         android:textColor="@color/yellow"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/bmpSharp"
-        app:layout_constraintTop_toTopOf="@+id/bmpSharp" />
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bmpSharp"
+        app:layout_constraintEnd_toStartOf="@+id/bmpSharp3"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toEndOf="@+id/bmpSharp" />
+
+    <Button
+        android:id="@+id/bmpSharp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/dark_green"
+        android:onClick="onBitmap3"
+        android:text="@string/S_BMP3"
+        android:textColor="@color/yellow"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bmpSharp2"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/txtBitMap"
@@ -63,4 +78,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgSharp"
         app:srcCompat="@drawable/kwiat2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
